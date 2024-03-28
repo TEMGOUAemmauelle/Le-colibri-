@@ -69,7 +69,7 @@ a {
       opacity: .4; }
   .custom-navbar .navbar-toggler {
     border-color: transparent;
-    margin-top: -40px;
+    margin-top: -50px;
     background: rgba(5, 5, 5, 0.1); }
     .custom-navbar .navbar-toggler:active, .custom-navbar .navbar-toggler:focus {
       -webkit-box-shadow: none;
@@ -105,15 +105,19 @@ a {
         transition: .15s all ease-out; } }
     .custom-navbar .custom-navbar-nav li a:hover {
       opacity: 1; }
+      .custom-navbar .custom-navbar-nav li{
+        margin-left: 30px;
+      }
       .custom-navbar .custom-navbar-nav li a:hover:before {
-        width: calc(100% - 16px); }
+        width: calc(100% - 10px);
+         }
        
   .custom-navbar .custom-navbar-nav li.active a {
     opacity: 1; 
     
    }
     .custom-navbar .custom-navbar-nav li.active a:before {
-      width: calc(100% - 16px); }
+      width: calc(100% - 10px); }
   .custom-navbar .custom-navbar-cta {
     margin-left: 0 !important;
     -webkit-box-orient: horizontal;
@@ -142,6 +146,7 @@ a {
     background-attachment: fixed;
   }
 }
+
 @media (max-width: 700px) {
   .hero {
     transition: all .5s ease-in-out ;
@@ -197,6 +202,12 @@ a {
       z-index: 2;
       max-width: 780px;
       left: -20px; }
+      @media (max-width: 700px) {
+        .hero .hero-img-wrap  {
+          max-width: 400px;
+          overflow: hidden;
+        }
+      }
       @keyframes rotation {
         from {
             transform: rotate(0deg);
@@ -216,6 +227,12 @@ a {
       z-index: 2;
       max-width: 780px;
       left: -20px; }
+      @media (max-width: 700px) {
+        .hero .hero-img-wrap .img-fluide {
+          position: absolute;
+          overflow: hidden;
+        }
+      }
       @keyframes rotation {
         from {
             transform: rotate(45deg);
