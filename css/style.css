@@ -88,6 +88,11 @@ a {
     -o-transition: .3s all ease;
     transition: .3s all ease;
     position: relative; }
+    @media (min-width: 468px) {
+      .custom-navbar .custom-navbar-nav li{
+        margin-left: 50px;
+      }
+    }
     @media (min-width: 768px) {
       .custom-navbar .custom-navbar-nav li a:before {
         content: "";
@@ -106,7 +111,7 @@ a {
     .custom-navbar .custom-navbar-nav li a:hover {
       opacity: 1; }
       .custom-navbar .custom-navbar-nav li{
-        margin-left: 30px;
+        margin-left: -10px;
       }
       .custom-navbar .custom-navbar-nav li a:hover:before {
         width: calc(100% - 10px);
@@ -204,7 +209,7 @@ a {
       left: -20px; }
       @media (max-width: 700px) {
         .hero .hero-img-wrap  {
-          max-width: 400px;
+          max-width: 100%;
           overflow: hidden;
         }
       }
